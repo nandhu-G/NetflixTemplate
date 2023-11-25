@@ -1,4 +1,0 @@
-del
-nxcn
-ndn
-nd
