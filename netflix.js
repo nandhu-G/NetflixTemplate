@@ -7,6 +7,7 @@ const popbox = document.querySelector('.poper');
 const popup = document.querySelectorAll('.poperbox');
 const opac = document.querySelector('.opac');
 const par = document.querySelector('#lng');
+const milT = document.querySelectorAll('.abitem');
 const alertapper = document.querySelectorAll('.altmsg');
 const alertcont = document.querySelectorAll('.alertbox');
 
@@ -42,6 +43,12 @@ document.body.addEventListener('click', () => {
         }
     }
     //body area
+});
+
+milT.forEach((item,index) => {
+    item.addEventListener('click',() => {        
+        inputvalue[index].focus();
+    })
 });
 
 popbtng.addEventListener('click', () => {
